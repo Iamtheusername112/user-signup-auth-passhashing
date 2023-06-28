@@ -15,6 +15,9 @@ const hbs = require("hbs");
 
 const app = express();
 
+// use session here:
+require("./config/session.config")(app);
+
 /**Then in the app.js, we need to link all these exported routes so the whole application is aware that these files are used and that the routes are available. */
 
 // const index = require("./routes/index");
